@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- CSSファイルの読み込み -->
+    <link rel="stylesheet" href="style.css" />
+    <title>HokkaidoーmySite</title>
+  </head>
+<body>
+  <section class="main-background">
+    <header id="navArea">
+    <nav>
+        <ul class="nav-list">
+          <li class="nav-list-item">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="nav-list-item"><a href="index.html#about">About</a></li>
+          <li class="nav-list-item"><a href="index.html#food">Food experiences</a></li>
+          <li class="nav-list-item"><a href="index.html#outdoors">Outdoors</a></li>
+        </ul> 
+      </nav> 
+    
+      <div class="hamburger-icon" >
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+ 
+    </header>
+
+    <div class="main-visual">
+        <img src="img/OHT86_tetugakunoki_TP_V.png" />
+        <h1>Hokkaido</h1>
+        <p class="main-visual-subtitle">
+          if you have never been there...here are some things you need to know !
+        </p>
+      </div>
+    
+    <main>
+      <section class="food" id="food">
+        <h2>Are you foodie ? <br>
+          then you must go to Hokkaido 😄 </h2>
+        <div class="border_line"></div>
+        <p class="main-text">
+          Welcome to Hokkaido, the northernmost prefecture of Japan, renowned for its delicious cuisine and vast natural beauty.<br />
+          In Japan people go to Hokkaido just to indulge its cuisine. <br />
+          You still don't believe 😗 ?
+          <br />
+          Let's explore local food with me !
+        </p>
+        <div class="main-contents">
+          <a href="./pages/ramen.html"  target="_blank"  class="main-contents-box">
+            <img src="img/adpDSC_7611-750x499.png">
+            <div class =contents-box_description>
+              <h4>RAMEN  ↗︎</h4>
+            </div>
+          </a>
+          <a href="" class="main-contents-box">
+            <img src="img/adpDSC_4734-760x507-1-640x360.png">
+            <div class =contents-box_description>
+              <h4>SUSHI <br>coming soon!</h4>
+            </div>
+          </a>
+          <a href="" class="main-contents-box">
+            <img src="img/b0163bba0c34a1e359dde5c0714f69fa_t.png">
+            <div class =contents-box_description>
+              <h4>SOUP CURRY <br>coming soon!</h4>
+            </div>
+          </a>
+          <a href="" class="main-contents-box">
+            <img src="img/20210830_zangi_main-670x443.png">
+            <div class =contents-box_description>
+              <h4>ZANGI <br>coming soon!</h4>
+            </div>
+          </a>
+          <a href="" class="main-contents-box">
+            <img src="img/jingisukan.jpg">
+            <div class =contents-box_description>
+              <h4>JINGISKAN <br>coming soon!</h4>
+            </div>
+          </a>
+          <a href="" class="main-contents-box">
+            <img src="img/kiji1Img.jpg">
+            <div class =contents-box_description>
+              <h4>SOFT ICED CREAM <br>coming soon!</h4>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="outdoors" id="outdoors">
+        <h2>You tired of city life? <br> then time to chill 🧘‍♀️🧘</h2>
+        <div class="border_line"></div>
+        <p class="main-text">
+          Home to stunning landscapes, Hokkaido offers a lot of attractions for nature enthusiasts. <br />
+           All places are just 1 hour from city!
+          
+        </p>
+        <div class="content">
+            <div class="image">
+              <img src="img/otaru.png" alt="otaru" />
+            </div>
+            <div class="text-box">
+            <h3>OCEAN</h3>
+            <p><span class="place">OTARU</span> is the one of the city with amazing ocean and beach, Just 30min from central Sapporo.  </p>
+            </div>
+            </div>
+            <div class="content">
+            <div class="image">
+              <img src="img/IMG_snowmountain.png" alt="snowmountain" />
+            </div>
+            <div class="text-box">
+            <h3>SNOW MOUNTAIN</h3>
+            <p><span class="place">NISEKO</span> is the most famous snow-activity area in Hokkaido, offering breathtaking snowscapes and exceptional snow quality. </p>
+            </div>
+            </div>
+
+            <div class="content">
+            <div class="image">
+              <img src="img/lake.png" alt="lake" />
+            </div>
+            <div class="text-box">
+            <h3>LAKE</h3>
+            <p><span class="place">Lake Toya</span> is part of the Shikotsu-Toya National Park. This area is also offers fishing,hiking and kayaking opportunities.</p>
+            </div>
+        </div>
+      </div>
+</section>
+        
+      
+    </main>
+<section class="about" id="about">
+<div class="about-contents">
+  <div class="about-pic">
+    <img src="img/myself.png" alt="my-face">
+  </div>
+  <div class="about-text">Hey there! I'm Erica, and I've been lucky enough to call Hokkaido home for several years. I'm super excited to share my personal recommendations for the best Hokkaido food, activities, and more on this website. Trust me, everything you'll find here is based on my own experiences and genuine enthusiasm. </div>
+</div>
+
+
+</section>
+    <footer>
+      <p class="footer-text"><span id="current-year"></span> &copy; ericainamura web.</p>
+    </footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>  //common options
+      ScrollReveal({
+        reset: true,
+        distance: "60px",
+        duration: 2000,
+        delay: 200
+      });
+      ScrollReveal().reveal(".main-visual h1", {
+        delay: 300,
+        origin: "left",
+      });
+      ScrollReveal().reveal(".main-visual-subtitle ,.food h2 ,.main-text,.outdoors h2", {
+        delay: 600,
+        origin: "bottom",
+      });
+      ScrollReveal().reveal(".image img,.main-contents-box", {
+        delay: 500,
+        origin: "left",
+        interval: 200,
+      });
+      ScrollReveal().reveal(".text-box", {
+        delay: 700,
+        origin: "right",
+      });
+
+      </script>
+
+
+</section>
+<script src="script.js"></script>
+  </body>
+</html>
