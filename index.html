@@ -29,33 +29,54 @@
     </header>
 
     <div class="main-visual">
-        <img src="img/OHT86_tetugakunoki_TP_V.png" />
-        <h1>Hokkaido</h1>
-        <p class="main-visual-subtitle">
-          if you have never been there...here are some things you need to know !
-        </p>
+      <video id="video" width="320" height="240" autoplay muted>
+        <source src="img/mountain.mp4" type="video/mp4">
+    </video>
+   
+        <h1>Hokkaido
+          <br> 
+        <span class="main-visual-subtitle">
+          Discover together
+        </span></h1>
       </div>
     
     <main>
       <section class="food" id="food">
-        <h2>Are you foodie ? <br>
-          then you must go to Hokkaido 😄 </h2>
+        <h2>The best food in Japan<br>
+           </h2>
         <div class="border_line"></div>
         <p class="main-text">
           Welcome to Hokkaido, the northernmost prefecture of Japan, renowned for its delicious cuisine and vast natural beauty.<br />
           In Japan people go to Hokkaido just to indulge its cuisine. <br />
-          You still don't believe 😗 ?
-          <br />
-          Let's explore local food with me !
+         
         </p>
         <div class="main-contents">
-          <a href="./pages/ramen.html"  target="_blank"  class="main-contents-box">
-            <img src="img/adpDSC_7611-750x499.png">
-            <div class =contents-box_description>
-              <h4>RAMEN  ↗︎</h4>
+          <!-- <a href="./pages/ramen.html"  target="_blank"  class="main-contents-box"> -->
+            <div class="main-contents-box"> 
+              <img src="img/adpDSC_7611-750x499.png">
+                <div class =contents-box_description>
+                  <h4>RAMEN</h4>
+                  <button href="./pages/ramen.html">Explore</button>
+                </div>
             </div>
-          </a>
-          <a href="" class="main-contents-box">
+
+            <div class="main-contents-box"> 
+              <img src="img/adpDSC_4734-760x507-1-640x360.png">
+                <div class =contents-box_description>
+                  <h4>SUSHI</h4>
+                  <button href="">Explore</button>
+                </div>
+            </div>
+
+            <div class="main-contents-box"> 
+              <img src="img/b0163bba0c34a1e359dde5c0714f69fa_t.png">
+                <div class =contents-box_description>
+                  <h4>SOUP CURRY</h4>
+                  <button href="">Explore</button>
+                </div>
+            </div>
+         
+          <!-- <a href="" class="main-contents-box">
             <img src="img/adpDSC_4734-760x507-1-640x360.png">
             <div class =contents-box_description>
               <h4>SUSHI <br>coming soon!</h4>
@@ -66,8 +87,8 @@
             <div class =contents-box_description>
               <h4>SOUP CURRY <br>coming soon!</h4>
             </div>
-          </a>
-          <a href="" class="main-contents-box">
+          </a> -->
+          <!-- <a href="" class="main-contents-box">
             <img src="img/20210830_zangi_main-670x443.png">
             <div class =contents-box_description>
               <h4>ZANGI <br>coming soon!</h4>
@@ -84,25 +105,26 @@
             <div class =contents-box_description>
               <h4>SOFT ICED CREAM <br>coming soon!</h4>
             </div>
-          </a>
+          </a> -->
         </div>
       </section>
 
-      <section class="outdoors" id="outdoors">
-        <h2>You tired of city life? <br> then time to chill 🧘‍♀️🧘</h2>
-        <div class="border_line"></div>
-        <p class="main-text">
-          Home to stunning landscapes, Hokkaido offers a lot of attractions for nature enthusiasts. <br />
-           All places are just 1 hour from city!
-          
-        </p>
+      <section  id="outdoors"> 
+        <div class="outdoor-title">
+
+          <h2 class="light">Escape the Urban Hustle and Bustle</h2>
+          <p class="main-text light">
+            Home to stunning landscapes, Hokkaido offers a lot of attractions for nature enthusiasts.
+          </p>
+        </div>
         <div class="content">
             <div class="image">
-              <img src="img/otaru.png" alt="otaru" />
+              <img src="img/onsen.jpg" alt="hotspring" />
             </div>
             <div class="text-box">
-            <h3>OCEAN</h3>
-            <p><span class="place">OTARU</span> is the one of the city with amazing ocean and beach, Just 30min from central Sapporo.  </p>
+            <h3>ONSEN (hot spring)</h3>
+            <div class="border_line"></div>
+            <p>A bit of a strange scenario you might imagine..<br> But you never know how amazing it is until you've experienced it!  </p>
             </div>
             </div>
             <div class="content">
@@ -110,8 +132,9 @@
               <img src="img/IMG_snowmountain.png" alt="snowmountain" />
             </div>
             <div class="text-box">
-            <h3>SNOW MOUNTAIN</h3>
-            <p><span class="place">NISEKO</span> is the most famous snow-activity area in Hokkaido, offering breathtaking snowscapes and exceptional snow quality. </p>
+            <h3>Ski and Snowbording</h3>
+            <div class="border_line"></div>
+            <p>Hokkaido is the most famous snow-activity area. offering breathtaking snowscapes and exceptional snow quality. </p>
             </div>
             </div>
 
@@ -120,8 +143,10 @@
               <img src="img/lake.png" alt="lake" />
             </div>
             <div class="text-box">
-            <h3>LAKE</h3>
-            <p><span class="place">Lake Toya</span> is part of the Shikotsu-Toya National Park. This area is also offers fishing,hiking and kayaking opportunities.</p>
+            <h3>Water activity</h3>
+            <div class="border_line"></div>
+             <p>Offering kayaking and canoeing on the breathtakingly beautiful lake.</p>
+    
             </div>
         </div>
       </div>
@@ -129,16 +154,7 @@
         
       
     </main>
-<section class="about" id="about">
-<div class="about-contents">
-  <div class="about-pic">
-    <img src="img/myself.png" alt="my-face">
-  </div>
-  <div class="about-text">Hey there! I'm Erica, and I've been lucky enough to call Hokkaido home for several years. I'm super excited to share my personal recommendations for the best Hokkaido food, activities, and more on this website. Trust me, everything you'll find here is based on my own experiences and genuine enthusiasm. </div>
-</div>
 
-
-</section>
     <footer>
       <p class="footer-text"><span id="current-year"></span> &copy; ericainamura web.</p>
     </footer>
@@ -154,7 +170,7 @@
         delay: 300,
         origin: "left",
       });
-      ScrollReveal().reveal(".main-visual-subtitle ,.food h2 ,.main-text,.outdoors h2", {
+      ScrollReveal().reveal(".main-visual-subtitle", {
         delay: 600,
         origin: "bottom",
       });
