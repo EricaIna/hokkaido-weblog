@@ -149,7 +149,7 @@ p {
   font-size: 24px;
 }
 
-.main .main {
+.main {
   width: 100%;
   overflow: hidden;
 }
@@ -173,7 +173,7 @@ p {
 }
 .main-contents {
   padding-bottom: 130px;
-  margin: 0 auto;
+  margin: 40px auto;
   display: flex;
   justify-content: center;
 }
@@ -250,7 +250,8 @@ p {
 
 .content .text-box {
   z-index: 20;
-  background: rgba(255, 255, 255, 0.1);
+
+  background: rgb(255 255 255 / 34%);
   backdrop-filter: blur(10px);
   padding: 40px;
   max-width: 400px;
@@ -396,6 +397,12 @@ footer {
   .main-page {
     grid-template-columns: repeat(2, 1fr);
   }
+  .main-text {
+    padding: 0;
+  }
+  .food h2 {
+    margin: 20px 0;
+  }
   .main-contents {
     flex-direction: column;
   }
@@ -405,6 +412,8 @@ footer {
   h2 {
     margin: 10px;
     font-size: 30px;
+    padding: 30px;
+    color: var(--dark-color);
   }
   .main-visual video {
     height: 50vh;
@@ -426,9 +435,10 @@ footer {
   }
   .content .text-box {
     position: absolute;
-    left: 30%;
+    left: 20%;
     right: 0;
-    max-width: 300px;
+    min-width: 100%;
+    backdrop-filter: blur(5px);
   }
   .main-page {
     grid-template-columns: repeat(1, 1fr);

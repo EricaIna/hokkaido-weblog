@@ -12,13 +12,7 @@ document.getElementById("current-year").innerHTML = new Date().getFullYear();
 //video loop
 
 const video = document.getElementById("video");
-const videos = [
-  "img/mountain.mp4",
-  "img/ski.mp4",
-  "img/6.mp4",
-  "img/7.mp4",
-  // 他のビデオファイルを追加
-];
+const videos = ["img/mountain.mp4", "img/ski.mp4", "img/6.mp4", "img/7.mp4"];
 let currentVideoIndex = 0;
 
 function playNextVideo() {
