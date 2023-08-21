@@ -1,10 +1,15 @@
 //hamburger
 let nav = document.querySelector("#navArea");
 let btn = document.querySelector(".hamburger-icon");
+let navList = document.querySelector(".nav-list");
 
 btn.onclick = () => {
   nav.classList.toggle("open");
 };
+
+navList.addEventListener("click", function () {
+  nav.classList.remove("open");
+});
 
 //copy right year
 document.getElementById("current-year").innerHTML = new Date().getFullYear();
