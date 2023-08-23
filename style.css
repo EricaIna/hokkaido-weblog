@@ -48,7 +48,7 @@ h3 {
   font-weight: 300;
 }
 p {
-  font-size: 24px;
+  font-size: 22px;
   color: var(--dark-color);
   text-align: left;
 }
@@ -172,25 +172,24 @@ p {
 }
 
 /* hokkaido map */
-.map {
-  background-color: var(--light-color);
-}
+
 .map-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--light-color);
   padding: 60px 0;
 }
-.map-text {
-  padding: 0 80px;
+
+.map-text p {
+  font-weight: 200;
 }
 .map h2 {
   margin-bottom: 20px;
 }
 
 .map-pic {
-  width: 50%;
+  background: aliceblue;
+  padding: 20px;
 }
 
 /* FOOD */
@@ -281,12 +280,12 @@ p {
   object-fit: cover;
 }
 
-.content .text-box {
+.text-box {
   z-index: 20;
   background: rgb(255 255 255 / 34%);
   backdrop-filter: blur(10px);
   padding: 40px;
-  max-width: 400px;
+  min-width: 400px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   transform: translate(-80px, 50px);
@@ -318,11 +317,20 @@ p {
 footer {
   width: 100%;
   text-align: center;
-  line-height: 200px;
+  padding-bottom: 30px;
 }
 
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 40px;
+}
+.menu-list p {
+  padding-bottom: 8px;
+}
 .footer-text {
-  color: var(--light-color);
+  color: var(--dark-color);
   font-size: 16px;
   text-align: center;
 }
@@ -444,6 +452,7 @@ footer {
   .map-container {
     flex-direction: column;
   }
+
   .ramen-main-page {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -472,6 +481,7 @@ footer {
   .map-container {
     flex-direction: column;
   }
+
   h2 {
     margin: 10px;
     font-size: 30px;
@@ -523,6 +533,7 @@ footer {
     max-width: 1220px;
   }
   .map-container,
+  .map,
   .food {
     width: 1200px;
     margin: 0 auto;
